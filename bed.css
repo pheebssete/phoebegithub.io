@@ -1,0 +1,254 @@
+* { /*whole body margin and padding*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ /*bg color for body*/
+    background-color: #FFFEF4;
+}
+
+ul{ /*style for unlisted nav*/
+    list-style: none;
+    background-color: #FFFEF4;
+    text-align: right;
+    border: 1px solid black;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    z-index: 2;
+    height: 90px;
+}
+
+ul li{ /*display and position for navbar*/
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{ /*text deco and color for nav bar*/
+    display: block;
+    padding: 25px 55px;
+    font-size: 20px;
+    color: rgb(71, 43, 43);
+    text-decoration: none;
+    transition: background-color 0.9s;
+    height: 89px;
+
+}
+
+ul li ul.dropdown li{ /*list for dropdown*/
+    display: block;
+    padding: 4px;
+    text-align: center;
+}
+
+ul li ul.dropdown{ /*size for nav dropdown*/
+    width: 240px;
+    height: 200px;
+    background: rgb(214, 226, 235);
+    position: absolute;
+    display: none;  
+}
+
+
+ul li a:hover{ /*color of hover*/
+    background: rgb(214, 226, 235);
+
+}
+
+ul li:hover ul.dropdown{ /*hover for the dropdow*/
+    display: block;
+    padding: 1px;
+    background-color: #FFFEF4;
+}
+
+.logo{ /*position for logo*/
+    position: absolute;
+    top: 8px ;
+    left: 80px;
+}
+
+.img{ /*bg img for bedroom*/
+    background-image: url(furniture/home/beed.jpeg);
+    text-align: center;
+    background-size: 100%;
+    height: 430px;
+    margin-top: 15px;
+}
+
+.img h1{ /*header for img bg*/
+    font-size: 50px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    margin-top: -15px;
+    padding-top: 160px;
+    color: #FFFEF4;
+}
+
+.f{ /*style for paragraph bedroom and sofa & chair*/
+    margin-right: 180px;
+    margin-left: 180px;
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    font-size: large;
+    margin-top: 50px;
+
+}
+
+.img1{ /*bg img for sfoa html*/
+    background-image: url(furniture/home/sofa.jpeg);
+    text-align: center;
+    background-size: 100%;
+    height: 430px;
+    margin-top: 15px;
+}
+
+.img1 h1{ /*header for sofa & chair*/
+    font-size: 50px;
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    margin-top: -15px;
+    padding-top: 160px;
+    color: #FFFEF4;
+}
+
+.h{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(71, 43, 43);
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    margin-top: 90px;
+}
+
+/*for the whole box*/
+.con{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+}
+
+/*box styling*/
+.box {
+  position: relative;
+  box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+  border-radius: 44px 4px 4px 4px;
+}
+.box .box-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 44px 4px 0 0;
+}
+.box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  }
+
+/*animation for the img*/
+.box .box-img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/*spacing between h2 and stars*/
+.def {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+/*heading for box*/
+.def h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Prompt", sans-serif;
+}
+
+
+/*sizing of each box*/
+.box span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 12px;
+  color: rgb(71, 43, 43);
+  font-family: "Prompt", sans-serif;
+}
+
+/*stars color*/
+.stars .bx {
+  color: rgb(71, 43, 43);
+}
+
+/*icon of box cart style*/
+.box .bx-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 7px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 4px 0 4px 0;
+  background: rgb(71, 43, 43);
+}
+
+/*border radius of the box*/
+.new-container .box {
+  border-radius: 4px;
+}
+
+/*border radius of the img*/
+.new-container .box .box-img {
+  border-radius: 10px;
+}
+
+/*footer styling*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1rem;
+  background-color: black;
+  padding-top:90px;
+  padding-bottom: 5px;
+}
+
+.foot {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  font-family: "Prompt", sans-serif;
+  color: #FFFEF4;
+}
+
+.footer-box h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Prompt", sans-serif;
+}
+.foot li a {
+  color: #FFFEF4;
+  text-decoration: none;
+}
+.foot li a:hover {
+  color:rgb(177, 221, 254); 
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.contact span {
+  color: #FFFEF4;
+}
+.copyright {
+  padding: 20px;
+  text-align: right;
+  font-family: "Prompt", sans-serif;
+  color: #FFFEF4;
+  margin-top: 100px;
+  font-size: smaller;
+}
